@@ -10,6 +10,12 @@ Module name
     - Description:
         1. Delete view_type in xml file
 
+* document_sidebar
+    - Author: renjie <i@renjie.me>
+    - website: https://renjie.me
+    - Description:
+        1. Inherit create function: change stage_id after attachment
+
 Contributors
 ------------
 
