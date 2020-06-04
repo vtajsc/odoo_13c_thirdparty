@@ -386,7 +386,7 @@
 			<field name="province_id" ref="vn_province_08"/>
 		</record>
 		<record id="district_072" model="res.country.district">
-			<field name="name">Huyện Na Hang</field>
+			<field name="name">Huyện Nà Hang</field>
 			<field name="code">072</field>
 			<field name="active" eval="True"/>
 			<field name="province_id" ref="vn_province_08"/>
@@ -1118,7 +1118,7 @@
 			<field name="province_id" ref="vn_province_26"/>
 		</record>
 		<record id="district_244" model="res.country.district">
-			<field name="name">Thành phố Phúc Yên</field>
+			<field name="name">Thị xã Phúc Yên</field>
 			<field name="code">244</field>
 			<field name="active" eval="True"/>
 			<field name="province_id" ref="vn_province_26"/>
@@ -1220,7 +1220,7 @@
 			<field name="province_id" ref="vn_province_30"/>
 		</record>
 		<record id="district_290" model="res.country.district">
-			<field name="name">Thành phố Chí Linh</field>
+			<field name="name">Thị xã Chí Linh</field>
 			<field name="code">290</field>
 			<field name="active" eval="True"/>
 			<field name="province_id" ref="vn_province_30"/>
@@ -1400,7 +1400,7 @@
 			<field name="province_id" ref="vn_province_33"/>
 		</record>
 		<record id="district_328" model="res.country.district">
-			<field name="name">Thị xã Mỹ Hào</field>
+			<field name="name">Huyện Mỹ Hào</field>
 			<field name="code">328</field>
 			<field name="active" eval="True"/>
 			<field name="province_id" ref="vn_province_33"/>
@@ -1640,7 +1640,7 @@
 			<field name="province_id" ref="vn_province_38"/>
 		</record>
 		<record id="district_382" model="res.country.district">
-			<field name="name">Thành phố Sầm Sơn</field>
+			<field name="name">Thị xã Sầm Sơn</field>
 			<field name="code">382</field>
 			<field name="active" eval="True"/>
 			<field name="province_id" ref="vn_province_38"/>
@@ -2396,7 +2396,7 @@
 			<field name="province_id" ref="vn_province_51"/>
 		</record>
 		<record id="district_540" model="res.country.district">
-			<field name="name">Thành phố Qui Nhơn</field>
+			<field name="name">Thành phố Quy Nhơn</field>
 			<field name="code">540</field>
 			<field name="active" eval="True"/>
 			<field name="province_id" ref="vn_province_52"/>
@@ -2462,7 +2462,7 @@
 			<field name="province_id" ref="vn_province_52"/>
 		</record>
 		<record id="district_555" model="res.country.district">
-			<field name="name">Thành phố Tuy Hoà</field>
+			<field name="name">Thành phố Tuy Hòa</field>
 			<field name="code">555</field>
 			<field name="active" eval="True"/>
 			<field name="province_id" ref="vn_province_54"/>
@@ -3224,7 +3224,7 @@
 			<field name="province_id" ref="vn_province_75"/>
 		</record>
 		<record id="district_732" model="res.country.district">
-			<field name="name">Thành phố Long Khánh</field>
+			<field name="name">Thị xã Long Khánh</field>
 			<field name="code">732</field>
 			<field name="active" eval="True"/>
 			<field name="province_id" ref="vn_province_75"/>
@@ -3320,7 +3320,7 @@
 			<field name="province_id" ref="vn_province_77"/>
 		</record>
 		<record id="district_754" model="res.country.district">
-			<field name="name">Thị xã Phú Mỹ</field>
+			<field name="name">Huyện Tân Thành</field>
 			<field name="code">754</field>
 			<field name="active" eval="True"/>
 			<field name="province_id" ref="vn_province_77"/>
@@ -3932,7 +3932,7 @@
 			<field name="province_id" ref="vn_province_91"/>
 		</record>
 		<record id="district_900" model="res.country.district">
-			<field name="name">Thành phố Hà Tiên</field>
+			<field name="name">Thị xã Hà Tiên</field>
 			<field name="code">900</field>
 			<field name="active" eval="True"/>
 			<field name="province_id" ref="vn_province_91"/>
