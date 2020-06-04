@@ -9,7 +9,6 @@ class IrAttachment(models.Model):
 
     @api.model
     def create(self, vals):
-        result = super(IrAttachment, self).create(vals)
-        if result.res_model in ['sale.order']:
-            self.env['sale.order'].search([('id', '=', result.res_id)])._attach_compute()
-        return result
+        if vals['res_model'] == 'sale.order':
+            self.env['sale.order'].search([('id', '=', vals['res_id'])])._attach_compute()
+        return super(IrAttachment, self).create(vals)
