@@ -10,5 +10,18 @@ class IrAttachment(models.Model):
     @api.model
     def create(self, vals):
         if vals['res_model'] == 'sale.order':
-            self.env['sale.order'].search([('id', '=', vals['res_id'])])._attach_compute()
-        return super(IrAttachment, self).create(vals)
+            so_id = self.env['sale.order'].search([('id', '=', vals['res_id'])])
+            if so_id:
+                so_id._attach_compute()
+                if vals['name'] and vals['datas']:
+                    pickings = so_id.mapped('picking_ids')
+                    for pic in pickings:
+                        self.create({
+                            'name': vals['name'],
+                            'res_id': pic.id,
+                            'res_model': pic._name,
+                            'datas': vals['datas'],
+                            'type': 'binary',
+                        })
+        res = super(IrAttachment, self).create(vals)
+        return res

@@ -14,7 +14,10 @@ Module name
     - Author: renjie <i@renjie.me>
     - website: https://renjie.me
     - Description:
-        1. Inherit create function: change stage_id after attachment
+        1. Inherit create function:
+            - change stage_id SO after attachment
+            - Create attachment file for Picking from SO
+
 
 Contributors
 ------------
