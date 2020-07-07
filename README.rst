@@ -17,7 +17,12 @@ Module name
         1. Inherit create function:
             - change stage_id SO after attachment
             - Create attachment file for Picking from SO
-
+* auto_backup
+    - Author: Yenthe Van Ginneken
+    - website: http://www.odoo.yenthevg.com
+    - Description:
+        1. db_backup.py line 124: change "os.makedirs(rec.folder)" to "raise Warning"
+        2. Add nextcall to cron
 
 Contributors
 ------------
