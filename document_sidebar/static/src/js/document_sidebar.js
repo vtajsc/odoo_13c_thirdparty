@@ -77,8 +77,6 @@ Sidebar.include({
         var self = this;
         //Count Attachments file > 1 =>> Alert !! (Apply sale.order model)
         if (this.env.model && this.env.model== 'sale.order'){
-            console.log("hahahaha");
-            }
         _.chain(attachments)
             .groupBy(function (attachment) { return attachment.name; })
             .each(function (attachment) {
@@ -99,6 +97,7 @@ Sidebar.include({
             a.write_date_string = field_utils.format.datetime(a.write_date, 'write_date', self.env.context.params);
         });
         this.items.files = attachments;
+        }
     },
     /**
      * @private
