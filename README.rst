@@ -24,6 +24,12 @@ Module name
         1. db_backup.py line 124: change "os.makedirs(rec.folder)" to "raise Warning"
         2. Add nextcall to cron
 
+* web_float_menu
+    - Author: VTA IT Team
+    - website: https://www.viettinhanh.com.vn
+    - Description:
+        1. Go to *Settings > Menu Items > Menu* then toggle *Is Float* field to enable menu hidden
+
 Contributors
 ------------
 
