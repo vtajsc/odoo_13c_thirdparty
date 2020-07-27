@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xml:space="preserve">
+    <t t-inherit="web.AppsMenu" t-inherit-mode="extension">
+        <xpath expr="//a[@role='menuitem']" position="attributes">
+            <attribute name="t-if">!app.is_float</attribute>
+        </xpath>
+    </t>
+</template>
