@@ -13,7 +13,7 @@ class IrAttachment(models.Model):
             raise UserError(_("You don't have permission for this action"))
         if vals['res_model'] == 'sale.order':
             so_id = self.env['sale.order'].search([('id', '=', vals['res_id'])])
-            if so_id:
+            if so_id and so_id.stage_id and so_id.stage_id.code == 'open':
                 so_id._attach_compute()
                 if vals['name'] and vals['datas']:
                     pickings = so_id.mapped('picking_ids')
@@ -25,7 +25,9 @@ class IrAttachment(models.Model):
                             'datas': vals['datas'],
                             'type': 'binary',
                         })
-        res = super(IrAttachment, self).create(vals)
+                res = super(IrAttachment, self).create(vals)
+            else:
+                res = super(IrAttachment, self).create([])
         return res
 
     def write(self, vals):
