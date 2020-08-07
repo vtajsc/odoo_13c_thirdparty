@@ -28,6 +28,8 @@ class IrAttachment(models.Model):
                 res = super(IrAttachment, self).create(vals)
             else:
                 res = super(IrAttachment, self).create([])
+        else:
+            res = super(IrAttachment, self).create(vals)
         return res
 
     def write(self, vals):
