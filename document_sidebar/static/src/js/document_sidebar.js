@@ -76,7 +76,7 @@ Sidebar.include({
         //to display number in name if more then one attachment which has same name.
         var self = this;
         //Count Attachments file > 1 =>> Alert !! (Apply sale.order model)
-        if (this.env.model && this.env.model== 'sale.order'){
+        if (this.env.model){
         _.chain(attachments)
             .groupBy(function (attachment) { return attachment.name; })
             .each(function (attachment) {
