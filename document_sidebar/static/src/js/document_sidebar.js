@@ -75,8 +75,6 @@ Sidebar.include({
     _processAttachments: function (attachments) {
         //to display number in name if more then one attachment which has same name.
         var self = this;
-        //Count Attachments file > 1 =>> Alert !! (Apply sale.order model)
-        if (this.env.model){
         _.chain(attachments)
             .groupBy(function (attachment) { return attachment.name; })
             .each(function (attachment) {
@@ -97,7 +95,6 @@ Sidebar.include({
             a.write_date_string = field_utils.format.datetime(a.write_date, 'write_date', self.env.context.params);
         });
         this.items.files = attachments;
-        }
     },
     /**
      * @private
