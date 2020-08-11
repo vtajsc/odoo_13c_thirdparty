@@ -13,7 +13,8 @@ class IrAttachment(models.Model):
             raise UserError(_("You don't have permission for this action"))
         if vals['res_model'] == 'sale.order':
             so_id = self.env['sale.order'].search([('id', '=', vals['res_id'])])
-            if so_id and so_id.stage_id and so_id.stage_id.code == 'open':
+            #Trong - 1108 - Cho phep add file vận đơn đối vs các đơn thiếu tồn, hàng thiếu
+            if so_id and so_id.stage_id and so_id.stage_id.code in ('open', 'inventory_not_enough', 'low_quality_product'):
                 so_id._attach_compute()
                 if vals['name'] and vals['datas']:
                     pickings = so_id.mapped('picking_ids')
