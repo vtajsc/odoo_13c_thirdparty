@@ -67,6 +67,7 @@ class LogrotateHistory(models.Model):
 
     _name = 'docker.logrotate.log'
     _description = 'Logrotate logs'
+    _order = 'date_log desc'
 
     date_log = fields.Datetime(string='Log Date', required=True)
     state = fields.Selection(
