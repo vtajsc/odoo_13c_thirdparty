@@ -16,7 +16,7 @@ class Logrotate(models.Model):
     _name = 'docker.logrotate'
     _description = 'Logrotate process in docker containers'
 
-    _sql_contraints = [
+    _sql_constraints = [
         ('uniq_logrotate_config', 'UNIQUE(active)', 'Duplicate'),
         ('valid_logrotate_config', 'CHECK(active)', 'Invalid'),
     ]
