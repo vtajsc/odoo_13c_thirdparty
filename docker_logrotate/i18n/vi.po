@@ -1,0 +1,134 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* docker_logrotate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-12 03:35+0000\n"
+"PO-Revision-Date: 2020-08-12 10:43+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: vi_VN\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate__active
+msgid "Active"
+msgstr "Hiệu lực"
+
+#. module: docker_logrotate
+#: model:ir.model,name:docker_logrotate.model_res_config_settings
+msgid "Config Settings"
+msgstr "Cấu hình"
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate__create_uid
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate_log__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate__create_date
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate_log__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate_log__note
+#: model_terms:ir.ui.view,arch_db:docker_logrotate.docker_logrotate_log_view_form
+msgid "Details"
+msgstr "Chi tiết"
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate__display_name
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate_log__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: docker_logrotate
+#: model:ir.model.fields.selection,name:docker_logrotate.selection__docker_logrotate_log__state__error
+msgid "Failed!"
+msgstr "Lỗi!"
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate__config
+#: model:ir.model.fields,field_description:docker_logrotate.field_res_config_settings__docker_logrotate_config
+msgid "File Config"
+msgstr "Tập tin cấu hình"
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate__id
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate_log__id
+msgid "ID"
+msgstr ""
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate____last_update
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate_log____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate__write_uid
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate_log__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate__write_date
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate_log__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate_log__date_log
+msgid "Log Date"
+msgstr "Ngày ghi nhận"
+
+#. module: docker_logrotate
+#: model:ir.actions.server,name:docker_logrotate.cron_docker_logrotate_ir_actions_server
+#: model:ir.cron,cron_name:docker_logrotate.cron_docker_logrotate
+#: model:ir.cron,name:docker_logrotate.cron_docker_logrotate
+msgid "Logrotate"
+msgstr "Phân đoạn nhật ký"
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_res_config_settings__docker_logrotate_id
+msgid "Logrotate Record"
+msgstr "Đối tượng cấu hình"
+
+#. module: docker_logrotate
+#: model:ir.model,name:docker_logrotate.model_docker_logrotate_log
+msgid "Logrotate logs"
+msgstr "Ghi chép các lần phân đoạn"
+
+#. module: docker_logrotate
+#: model:ir.model,name:docker_logrotate.model_docker_logrotate
+msgid "Logrotate process in docker containers"
+msgstr "Xử lý yêu cầu phân đoạn ghi chép trong một máy ảo"
+
+#. module: docker_logrotate
+#: model:ir.model.fields,field_description:docker_logrotate.field_docker_logrotate_log__state
+msgid "Result"
+msgstr "Kết quả"
+
+#. module: docker_logrotate
+#: model:ir.actions.act_window,name:docker_logrotate.docker_logrotate_log_action
+msgid "Rotate Logs"
+msgstr "Ghi chép các lần phân đoạn"
+
+#. module: docker_logrotate
+#: model:ir.model.fields.selection,name:docker_logrotate.selection__docker_logrotate_log__state__success
+msgid "Successful!"
+msgstr "Hoàn thành!"
+
+#. module: docker_logrotate
+#: model_terms:ir.ui.view,arch_db:docker_logrotate.res_config_settings_view_form_inherit
+msgid "View logs"
+msgstr "Xem các ghi chép"

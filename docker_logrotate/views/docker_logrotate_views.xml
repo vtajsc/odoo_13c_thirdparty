@@ -1,0 +1,34 @@
+<odoo>
+    <record id="docker_logrotate_log_view_tree" model="ir.ui.view">
+        <field name="name">docker.logrotate.log.tree</field>
+        <field name="model">docker.logrotate.log</field>
+        <field name="arch" type="xml">
+            <tree decoration-success="state=='success'" decoration-danger="state=='error'">
+                <field name="date_log"/>
+                <field name="state"/>
+                <field name="note"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="docker_logrotate_log_view_form" model="ir.ui.view">
+        <field name="name">docker.logrotate.log.form</field>
+        <field name="model">docker.logrotate.log</field>
+        <field name="arch" type="xml">
+            <form>
+                <group col="4">
+                    <field name="state"/>
+                    <field name="date_log"/>
+                </group>
+                <group string="Details" attrs="{'invisible': [('state', '!=', 'error')]}">
+                    <field name="note" nolabel="1" colspan="2"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="docker_logrotate_log_action" model="ir.actions.act_window">
+        <field name="name">Rotate Logs</field>
+        <field name="res_model">docker.logrotate.log</field>
+    </record>
+</odoo>

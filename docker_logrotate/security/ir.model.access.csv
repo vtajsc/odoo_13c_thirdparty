@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+docker_logrotate_access_all,docker.logrotate.access.all,model_docker_logrotate,,1,1,0,0
+docker_logrotate_log_access_all,docker.logrotate.log.access.all,model_docker_logrotate_log,,1,0,0,0

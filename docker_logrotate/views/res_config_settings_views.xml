@@ -1,0 +1,21 @@
+<odoo>
+    <record id="res_config_settings_view_form_inherit" model="ir.ui.view">
+        <field name="name">res.config.settings.form.inherit</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <div name="integration">
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                        <label for="docker_logrotate_config"/>
+                        <div class="content-group">
+                            <field name="docker_logrotate_id" invisible="1"/>
+                            <field name="docker_logrotate_config"/>
+                        </div>
+                        <button type="action" name="%(docker_logrotate_log_action)d" string="View logs" class="oe_link" icon="fa-arrow-right"/>
+                    </div>
+                </div>
+            </div>
+        </field>
+    </record>
+</odoo>
