@@ -77,8 +77,13 @@
             flex: 1 1 auto;
         }
 
+        .o_cp_left {
+            flex-direction: column;
+        }
+
         .o_cp_sidebar {
             display: none;
+            display: block;
         }
 
         .o_cp_switch_buttons {
