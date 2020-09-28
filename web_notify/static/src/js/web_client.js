@@ -61,6 +61,14 @@ odoo.define('web_notify.WebClient', function (require) {
             });
         },
         on_message: function (message) {
+            _audio: null;
+            if (!this._audio) {
+                this._audio = new Audio();
+                var ext = this._audio.canPlayType("audio/ogg; codecs=vorbis") ? ".ogg" : ".mp3";
+                var session = this.getSession();
+                this._audio.src = session.url("/web_notify/static/src/audio/notify" + ext);
+            }
+            this._audio.play();
             return this.call(
                 'notification', 'notify', {
                     type: message.type,
