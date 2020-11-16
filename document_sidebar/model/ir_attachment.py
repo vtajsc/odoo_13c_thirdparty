@@ -9,7 +9,7 @@ class IrAttachment(models.Model):
 
     @api.model
     def create(self, vals):
-        if vals['res_model'] in ('sale.order', 'stock.picking'):
+        if vals['res_model'] in ('sale.order'):
             if self.env.user.has_group('vta_marketplace_generic.group_vta_hub_staff') and self.env.user.login != 'admin':
                 raise UserError(_("You don't have permission for this action"))
             so_id = self.env['sale.order'].search([('id', '=', vals['res_id'])])
@@ -46,13 +46,15 @@ class IrAttachment(models.Model):
         return res
 
     def write(self, vals):
-        if self.res_model in ('sale.order', 'stock.picking'):
-            if self.env.user.has_group('vta_marketplace_generic.group_vta_hub_staff') and self.env.user.login != 'admin':
-                raise UserError(_("You don't have permission for this action"))
+        for rec in self:
+            if rec.res_model in ('sale.order', 'stock.picking'):
+                if self.env.user.has_group('vta_marketplace_generic.group_vta_hub_staff') and self.env.user.login != 'admin':
+                    raise UserError(_("You don't have permission for this action"))
         return super(IrAttachment, self).write(vals)
 
     def unlink(self):
-        if self.res_model in ('sale.order', 'stock.picking'):
-            if self.env.user.has_group('vta_marketplace_generic.group_vta_hub_staff') and self.env.user.login != 'admin':
-                raise UserError(_("You don't have permission for this action"))
+        for rec in self:
+            if rec.res_model in ('sale.order', 'stock.picking'):
+                if self.env.user.has_group('vta_marketplace_generic.group_vta_hub_staff') and self.env.user.login != 'admin':
+                    raise UserError(_("You don't have permission for this action"))
         return super(IrAttachment, self).unlink()
